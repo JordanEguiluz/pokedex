@@ -1,6 +1,11 @@
+import PokemonView from "./componets/interfaces/pokemonInterface/PokeView"
+
+
+
 const App = () => (
   <div className="App">
-      Hola mundo
+      Soy charmander
+      <PokemonView />
   </div>
 );
 
