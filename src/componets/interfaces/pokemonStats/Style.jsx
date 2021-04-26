@@ -9,3 +9,5 @@ const PokemonStats = makeStyles({
 
 
 })
+
+export default PokemonStats

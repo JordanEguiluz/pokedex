@@ -1,13 +1,18 @@
-import {Container, paper} from "@material-ui/core"
-import pokeStats from "./Style"
+import { Paper, Box, Typography } from "@material-ui/core";
+import pokeStats from "./Style";
 
-const PokemonStats = () => {
-    const stats = pokeStats()
-    return (
-        <paper>
-            
-        </paper>
-    )   
-}
+const PokemonStats = ({ attributes }) => {
+  const stats = pokeStats();
+  return (
+    <Paper>
+      {attributes.map((item) => (
+        <Box>
+          <Typography>{item.title}</Typography>
+          <Typography>{item.attribute}</Typography>
+        </Box>
+      ))}
+    </Paper>
+  );
+};
 
-export default PokemonStats
+export default PokemonStats;
