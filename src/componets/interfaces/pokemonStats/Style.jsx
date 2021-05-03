@@ -1,13 +1,13 @@
-import {makeStyles} from "@material-ui/core"
+import { makeStyles } from "@material-ui/core"
 
 const PokemonStats = makeStyles({
     root: {
-        //STYLOS
+        backgroundColor: "#FFFFFF",
+        width : "400px",
+        marginLeft: "25px",
+        marginTop: "15px",
+        border: "2px solid red"
     }
-
-
-
-
 })
 
 export default PokemonStats
