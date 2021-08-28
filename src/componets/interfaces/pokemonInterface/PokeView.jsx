@@ -1,14 +1,14 @@
-import React, { useState, Component } from "react"
-import {Typography, Container, Button,IconButton } from "@material-ui/core"
+import React, { useState,  } from "react"
+import { Container, Button, } from "@material-ui/core"
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import PokeImg from "../../../assets/img/charmander.png"
 import styleOverride  from "./Style"
+
 
 const PokemonView = () => {
     const classes = styleOverride()
 
     const [ isVisible, isSetVisible ] = useState(true)
-        console.log(isVisible)
 
     const handleImage = () => {
         isSetVisible(!isVisible)
@@ -23,26 +23,22 @@ const PokemonView = () => {
     const handleReset = () => {
          isSetLike(0 )
 }
-    
-
-
     return (
         <>
-        <Button  onClick={handleImage} style={{backgroundColor: 'gray', color: '#FFFFFF'}}>{isVisible ? 'Ocultar' :' Mostrar'}</Button>
+        <Button  onClick={handleImage}  style={{backgroundColor: 'gray',  color: '#FFFFFF'}}>{isVisible ? 'Ocultar' :' Mostrar'}</Button>
          { isVisible ?
-        <Container>
+        <Container className={classes.cajaFoto} >
             <img src={PokeImg} alt="Img" className={classes.root} />
         </Container> : 
         <h2>Imagen oculta</h2>}
        
-         <Button
+         <Button className="BotonLike"
           onClick={handleLike}><ThumbUpAltIcon  style={{backgroundColor: 'gray', color: '#5882FA'}}></ThumbUpAltIcon>
          </Button>
          { isLike  }
-         <Button
+         <Button className="BotonReset"
           onClick={handleReset  } style={{backgroundColor: 'gray', color: '#FFFFFF'}}> {isLike?  'Reiniciar': 'Reiniciado'}
           </Button>
-         
         </>
     )
 
