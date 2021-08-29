@@ -7,7 +7,7 @@ const PokemonStats = ({ attributes }) => {
   return (
     <Container className={classes.caja}>
       <Paper className={classes.root}>
-        {attributes.map((item: string) => (
+        {attributes.map((item) => (
           <Box>
             <Typography className={classes.typography}>{item.title}</Typography>
             <Typography className={classes.typography}>{item.attribute}</Typography>

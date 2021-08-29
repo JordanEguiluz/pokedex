@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "module": "esnext",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "outDir": "./build/",
     "preserveConstEnums": true,
     "removeComments": true,

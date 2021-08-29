@@ -20,8 +20,11 @@
   },
   "rules": {
     "max-len": ["error", { "code": 100 }],
+    "no-console": "off",
+    "consistent-return": "off",
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
+    "import/prefer-default-export": "off",
     "react/prop-types": ["warn"],
     "no-return-assign": ["off"],
     "import/extensions": [
