@@ -5,7 +5,7 @@ import client from '../api'
 
 export const getPokemon = (data) =>
   client({
-    url: path.GetPokemon,
+    url: path.GetAllPokemon,
     method: 'GET',
     data,
   })
